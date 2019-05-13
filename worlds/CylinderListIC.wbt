@@ -41,3 +41,30 @@ DEF A2_CYL2 Solid {
   ]
   name "solid(1)"
 }
+DEF A3_CYL3 Solid {
+  translation 0.6 0.15 0
+  children [
+    Shape {
+      appearance DEF A_3 PBRAppearance {
+        baseColor 0.4588235294117647 0.3137254901960784 0.4823529411764706
+      }
+      geometry DEF G_CYL3 Cylinder {
+        height 0.3
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF CYL4 Solid {
+  translation 0.9 0.175 0
+  children [
+    Shape {
+      geometry DEF G_CYL4 Cylinder {
+        height 0.35
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+}
